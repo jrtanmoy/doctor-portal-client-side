@@ -4,6 +4,7 @@ import cavity from '../../assets/images/cavity.png';
 import whitening from '../../assets/images/whitening.png';
 import Service from './Service';
 import treatment from '../../assets/images/treatment.png'
+import PrimaryButton from '../Shared/PrimaryButton';
 
 const Services = () => {
     const services = [
@@ -40,13 +41,13 @@ const Services = () => {
                     ></Service>)
                 }
             </div>
-            <div class="hero min-h-screen px-16">
+            <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row">
                     <img src={treatment} class="max-w-sm rounded-lg shadow-2xl" alt='' />
-                    <div className='pl-4'>
+                    <div className='pl-6'>
                         <h1 class="text-5xl font-bold">Exceptional Dental Care, On Yours Terms.</h1>
                         <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <PrimaryButton>Get Started</PrimaryButton>
                     </div>
                 </div>
             </div>
