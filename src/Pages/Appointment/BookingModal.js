@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 const BookingModal = ({ date, treatment, setTreatment }) => {
     const { _id, name, slots } = treatment;
 
-    const handleBooking = event =>{
+    const handleBooking = event => {
         event.preventDefault();
         const slot = event.target.slot.value;
         console.log(_id, name, slot);
@@ -22,7 +22,7 @@ const BookingModal = ({ date, treatment, setTreatment }) => {
                         <input type="text" disabled value={format(date, 'PP')} class="input input-bordered w-full max-w-xs" />
                         <select name="slot" class="select select-bordered w-full max-w-xs">
                             {
-                                slots.map(slot =><option value={slot}>{slot}</option>)
+                                slots.map(slot => <option value={slot}>{slot}</option>)
                             }
                         </select>
                         <input type="text" name="name" placeholder="Your Name" class="input input-bordered w-full max-w-xs" />
